@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            font-family: 'Anek Bangla', sans-serif;
+        }
+
+        body, html {
+    height: 100%;
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:dodgerblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: hidden;
+}
+
+.form-box {
+    width: 300px;
+    padding: 40px;
+    background:black;
+    text-align: center;
+    
+}
+
+.form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: #ffffff;
+}
+
+.form-box button[type="submit"] {
+    border: 0;
+    background: #5352ed;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+    background: none;
+}
+
+.container  {
+    display:flex;
+    align-items: center;
+    gap: 70px;
+}
+
+img {
+    border-radius: 5px;
+    width: 300px;
+    border: solid 2px black
+}
+
+form {
+    border: solid 2px white;
+}
+    </style>
+</head>
+
+<body>
+
+   <div class="container">
+    <div>
+        <img src="./IMG/SENA.png" alt="SENA">
+    </div>
+    <div>
+        <form action="Delete.php" method="post" class="form-box animated fadeInUp" >
+            <h1 class="form-title">Eliminar Registro</h1>
+            <p class="form-title">Ingrese el Usuario a eliminar</p>
+            <input type="text" placeholder="Usuario" name="Usuario" autofocus>
+         
+            <button type="submit">
+                Borrar
+            </button>
+            <a href="http://localhost:8080/SenaPHP/IndexAdmin.php#" style="color: #ffffff; text-decoration: none">Volver al Admin</a>
+        </form>
+    </div>
+   </div>
+</body>
+
+</html>
